@@ -1,5 +1,14 @@
 # Test case for a possible bug in av_parser_parse2
 
+(EDIT) BUG CLOSED: it was a documentation issue:
+ * [Ticket 5809](https://trac.ffmpeg.org/ticket/5809) in FFmpeg bug tracker
+ * Fix in commit 7a8e5ff1fd, visible on
+[videolan.org](https://git.videolan.org/?p=ffmpeg.git;a=commitdiff;h=7a8e5ff1fd06c0363ed4bb26cda5262fcd925b74)
+and on
+[Github mirror](https://github.com/FFmpeg/FFmpeg/commit/7a8e5ff1fd06c0363ed4bb26cda5262fcd925b74)
+
+---
+
 This is a small test case to demonstrate a buffer overflow on the input
 buffer of `av_parser_parse2` (at least with the mpegaudio parser).
 
